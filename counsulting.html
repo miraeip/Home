@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>컨설팅 분야</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #1E3544;
+      color: #FFFFFF;
+      margin: 0;
+    }
+
+    .hero {
+      height: 8vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .page-title {
+      font-size: 2.4rem;
+      text-align: center;
+      color: #FFFFFF;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .container {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .section {
+      background-color: #2E4C5A;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #BDDCDE;
+      color: #BDDCDE;
+      padding-bottom: 0.3rem;
+      display: inline-block;
+    }
+
+    .section-content {
+      font-size: 1.2rem;
+    }
+
+    .section-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .section-content li {
+      margin-bottom: 0.6rem;
+    }
+
+    .section-content li::before {
+      content: "▸ ";
+      color: #BDDCDE;
+      font-size: 1.4rem;
+      font-weight: bold;
+      margin-right: 0.4rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 페이지 중앙에 제목 -->
+  <div class="hero">
+    <h1 class="page-title">주요 컨설팅 분야</h1>
+  </div>
+
+  <!-- 컨설팅 분야 카드 영역 -->
+  <div class="container">
+    <div class="section" id="field1">
+      <div class="section-title">IP 전략 기획</div>
+      <div class="section-content">
+        <ul>
+          <li>기업 맞춤형 지식재산 전략 수립</li>
+          <li>특허 포트폴리오 분석</li>
+          <li>경쟁사 특허기술 분석</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="field2">
+      <div class="section-title">특허/디자인/상표 권리화</div>
+      <div class="section-content">
+        <ul>
+          <li>강한 IP 확보 전략</li>
+          <li>분쟁 대응 전략</li>
+          <li>브랜드 보호 방안</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="field3">
+      <div class="section-title">해외 IP 확보 전략</div>
+      <div class="section-content">
+        <ul>
+          <li>경제적/ 효율적 해외 IP 확보 전략</li>
+          <li>해외 국가별 대응 전략</li>
+          <li>PCT/헤이그/마드리드 출원</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="field4">
+      <div class="section-title">기술가치평가 및 투자 연계</div>
+      <div class="section-content">
+        <ul>
+          <li>IP 유동화를 위한 특허/기술 가치평가</li>
+          <li>지식재산 기반의 기업 가치평가</li>
+          <li>투자유치 전략 연계</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="field5">
+      <div class="section-title">기술이전 및 기술거래</div>
+      <div class="section-content">
+        <ul>
+          <li>라이선스 계약</li>
+          <li>기술 수요 및 공급 발굴</li>
+          <li>기술 매칭 및 협상 지원</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section" id="field6">
+      <div class="section-title">인증 및 정책자금 연계</div>
+      <div class="section-content">
+        <ul>
+          <li>벤처/이노비즈 인증 자문</li>
+          <li>과제 기획 자문</li>
+          <li>정부 R&D 및 사업화 연계</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

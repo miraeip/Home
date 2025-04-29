@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <title>미래 IP 전략컨설팅</title>
+
   <style>
     body {
       margin: 0;
@@ -15,15 +16,27 @@
       padding: 2rem;
     }
 
-.slogan {
-  font-family: 'Great Vibes', cursive;
-  font-size: 32px;
-  font-weight: bold;
-  background: linear-gradient(90deg, #FFF89C, #FFE066, #FFEB99);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin-bottom: 1rem;
-}
+    /* ✨ Shining 애니메이션 */
+    @keyframes shine {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
+    .slogan {
+      font-family: 'Great Vibes', cursive;
+      font-size: 32px;
+      font-weight: bold;
+      background: linear-gradient(90deg, #FFF89C, #FFE066, #FFEB99);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 3s linear infinite;
+      margin-bottom: 1rem;
+    }
 
     .subtitle {
       font-size: 1.3rem;
@@ -53,43 +66,44 @@
       padding: 0 1rem;
     }
 
+    /* 버튼 그룹 */
     .btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 1.2rem;
-   }
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+      margin-bottom: 3rem;
+    }
 
-    .btn {
+    /* 버튼 기본 스타일 */
+    .btn, .btn-consulting, .btn-blog {
       display: inline-block;
-      margin-top: 2rem;
-      padding: 0.4rem 1.0rem;
-      background-color: white;
-      color: #1E3544;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    .btn {
+      background-color: white;
+      color: #1E3544;
     }
 
     .btn-consulting {
-     display: inline-block;
-    margin-top: 2rem;
-      padding: 0.4rem 1.0rem;
       background-color: #BDDCDE;
       color: #1E3544;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 6px;
     }
 
     .btn-blog {
-      display: inline-block;
-      margin-top: 2rem;
-      padding: 0.4rem 1.0rem;
       background-color: #03C75A;
       color: #1E3544;
-      font-weight: bold;
-      text-decoration: none;
-      border-radius: 6px;
+    }
+
+    /* 버튼 hover 효과 */
+    .btn:hover, .btn-consulting:hover, .btn-blog:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     @media (max-width: 768px) {
@@ -103,49 +117,51 @@
         width: 150px;
       }
       .slogan {
-        font-size: 1rem;
+        font-size: 1.6rem;
       }
     }
   </style>
 </head>
+
 <body>
   <img class="logo" src="https://raw.githubusercontent.com/miraeip/Home/main/logo.png" alt="MRIP Logo">
   <div class="title">미래 IP전략컨설팅</div>
   <div class="subtitle">Mirae IP Strategy Consulting</div>
-<br>
+
   <div class="slogan"><em>Shining Beyond Patents</em></div>
+
   <div class="info">
     <p style="margin-bottom: 0.5rem;">
-    미래 IP 전략컨설팅은 <br>
-    특허를 넘어선 가치를 제안합니다. <br>
+      미래 IP 전략컨설팅은 <br>
+      특허를 넘어선 가치를 제안합니다. <br>
     </p>
-    <p>기술과  IP 전문가의 깊이 있는 경험과 <br> 
-    다각적인 관찰을 바탕으로 <br>
-    비지니스와 연계할 수 있는 <br>
-    IP 활용 컨설팅을 제공하겠습니다.<br>
+    <p>
+      기술과 IP 전문가의 깊이 있는 경험과 <br>
+      다각적인 관찰을 바탕으로 <br>
+      비지니스와 연계할 수 있는 <br>
+      IP 활용 컨설팅을 제공하겠습니다.
     </p>
   </div>
-  <div class="info">
-   <strong>대표 컨설턴트 정지덕</strong>
-    <br>
-    <br>
-    공학박사 / 변리사  <br>
-    ICVS(국제공인가치평가사)  <br> 
-기업기술가치평가사 / 기술거래사 <br> 
-     前 특허청 심사관  <br>
-</div>
 
+  <div class="info">
+    <strong>대표 컨설턴트 정지덕</strong><br><br>
+    공학박사 / 변리사<br>
+    ICVS(국제공인가치평가사)<br>
+    기업기술가치평가사 / 기술거래사<br>
+    前 특허청 심사관
+  </div>
 
   <div class="contact">
     jjd@mirae-ip.com<br>
-    010-7700-삼치구이(3792)<br>
-    대전광역시 대덕구 대전로1331번길 40, <br>
+   010-7700-삼치구이(3792)<br>
+    대전광역시 대덕구 대전로1331번길 40,<br>
     대전플랫폼시티 713호 (34363)
   </div>
 
-<div class="btn-group">
-  <a class="btn-consulting" href="counsulting.html">컨설팅 분야</a>
-  <a class="btn-blog" href="https://m.blog.naver.com/miraeip2025">블로그</a>
-</div>
+  <div class="btn-group">
+    <a class="btn-consulting" href="consulting.html">컨설팅 분야</a>
+    <a class="btn-blog" href="https://m.blog.naver.com/miraeip2025" target="_blank">블로그</a>
+  </div>
+
 </body>
 </html>

@@ -77,6 +77,35 @@
       font-weight: bold;
       margin-right: 0.4rem;
     }
+    .button-group {
+  margin: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.btn-home, .btn-blog {
+  background-color: #ffffff;
+  color: #1E3544;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #BDDCDE;
+}
+
+.btn-blog {
+  background-color: #00C73C; /* 네이버 블로그 초록색 */
+  color: #ffffff;
+}
+
+.btn-blog:hover {
+  background-color: #00a82d;
+}
   </style>
 </head>
 <body>
@@ -154,6 +183,9 @@
       </div>
     </div>
   </div>
-
+<div class="button-group">
+  <a class="btn-home" href="/index.html">🏠 홈으로 가기</a>
+  <a class="btn-blog" href="https://blog.naver.com/miraeip" target="_blank">📝 블로그</a>
+</div>
 </body>
 </html>

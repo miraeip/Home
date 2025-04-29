@@ -4,109 +4,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <title>컨설팅 분야</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #1E3544;
-      color: #FFFFFF;
-      margin: 0;
-    }
+ <style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1E3544;
+    color: #FFFFFF;
+    margin: 0;
+  }
 
-    .hero {
-      height: 10vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  .hero {
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .page-title {
-      font-size: 2.0rem;
-      text-align: center;
-      color: #FFFFFF;
-    }
+  .page-title {
+    font-size: 2.2rem;
+    text-align: center;
+    color: #FFFFFF;
+  }
 
+  .container {
+    max-width: 750px; /* 살짝 좁힘 */
+    margin: 0 auto;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem; /* 카드 사이 간격 줄임 */
+  }
+
+  @media (min-width: 768px) {
     .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 1.0rem;
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1.5rem;
+      grid-template-columns: 1fr 1fr;
     }
+  }
 
-    @media (min-width: 768px) {
-      .container {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+  .section {
+    background-color: #2E4C5A;
+    border-radius: 16px;
+    padding: 0.8rem; /* 카드 안 여백 줄임 */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
 
-    .section {
-      background-color: #2E4C5A;
-      border-radius: 16px;
-      padding: 1.2rem;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
+  .section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    border-bottom: 2px solid #BDDCDE;
+    color: #BDDCDE;
+    padding-bottom: 0.2rem;
+    display: inline-block;
+  }
 
-    .section-title {
-      font-size: 1.2rem;
-      font-weight: bold;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #BDDCDE;
-      color: #BDDCDE;
-      padding-bottom: 0.3rem;
-      display: inline-block;
-    }
+  .section-content {
+    font-size: 1rem;
+  }
 
-    .section-content {
-      font-size: 1.0rem;
-    }
+  .section-content ul {
+    list-style: none;
+    padding-left: 0;
+  }
 
-    .section-content ul {
-      list-style: none;
-      padding-left: 0;
-    }
+  .section-content li {
+    margin-bottom: 0.5rem;
+  }
 
-    .section-content li {
-      margin-bottom: 0.6rem;
-    }
+  .section-content li::before {
+    content: "▸ ";
+    color: #BDDCDE;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 0.3rem;
+  }
 
-    .section-content li::before {
-      content: "▸ ";
-      color: #BDDCDE;
-      font-size: 1.4rem;
-      font-weight: bold;
-      margin-right: 0.4rem;
-    }
-    .button-group {
-  margin: 3rem 0 1rem 0;
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-}
+  /* 버튼 그룹 스타일 */
+  .button-group {
+    margin: 2.5rem 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-.btn-home, .btn-blog {
-  background-color: #ffffff;
-  color: #1E3544;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  transition: background-color 0.3s;
-}
+  .btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #FFFFFF;
+    color: #1E3544;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
 
-.btn-home:hover {
-  background-color: #BDDCDE;
-}
+  .btn:hover {
+    background-color: #BDDCDE;
+  }
 
-.btn-blog {
-  background-color: #00C73C; /* 네이버 블로그 초록색 */
-  color: #ffffff;
-}
+  .btn-blog {
+    background-color: #00C73C; /* 네이버 블로그 초록색 */
+    color: #FFFFFF;
+  }
 
-.btn-blog:hover {
-  background-color: #00a82d;
-}
-  </style>
+  .btn-blog:hover {
+    background-color: #00a82d;
+  }
+</style>
 </head>
 <body>
 

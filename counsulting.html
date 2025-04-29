@@ -43,7 +43,7 @@
   .section {
     background-color: #2E4C5A;
     border-radius: 16px;
-    padding: 0.8rem; /* 카드 안 여백 줄임 */
+    padding: 0.8rem 0.2rem 0.4rem 2.4rem; /* top right bottom left */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
 
@@ -79,32 +79,44 @@
   }
 
   /* 버튼 그룹 스타일 */
-  .button-group {
-    margin: 2.5rem 0 1rem 0;
+  .btn-group {
     display: flex;
     justify-content: center;
-    gap: 1rem;
-  }
+    gap: 1.2rem;
+   }
 
-  .btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background-color: #FFFFFF;
-    color: #1E3544;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: background-color 0.3s;
-  }
+    .btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.4rem 1.0rem;
+      background-color: white;
+      color: #1E3544;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
 
-  .btn:hover {
-    background-color: #BDDCDE;
-  }
-
+    .btn-home {
+     display: inline-block;
+    margin-top: 2rem;
+      padding: 0.4rem 1.0rem;
+      background-color: #BDDCDE;
+      color: #1E3544;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+   
   .btn-blog {
-    background-color: #00C73C; /* 네이버 블로그 초록색 */
-    color: #FFFFFF;
-  }
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.4rem 1.0rem;
+      background-color: #03C75A;
+      color: #1E3544;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
 
   .btn-blog:hover {
     background-color: #00a82d;
@@ -186,7 +198,7 @@
       </div>
     </div>
   </div>
-<div class="button-group">
+<div class="btn-group">
   <a class="btn-home" href="https://miraeip.github.io/Home/">Home</a>
   <a class="btn-blog" href="https://blog.naver.com/miraeip2025" target="_blank">블로그</a>
 </div>
